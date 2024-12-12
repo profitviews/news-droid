@@ -4,7 +4,7 @@ This is a project to experiment with different methods of getting news sentiment
 
 It is assoaciated with a [Blog post on ProfitView](https://profitview.net/blog/what-i-learned-when-building-an-ai-news-trading-bot).  You can [sign-up there](https://profitview.net/register) to run a bot that trades using news sentiment.
 
-## Experiment
+## Experimental Notebook
 
 I've created a [Jupyter notebook](src/experiment.ipynb) to experiment with different methods of getting news sentiment for a given coin.
 
