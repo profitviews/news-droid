@@ -1,35 +1,18 @@
-# News Bot
+# News Droid
 
-Use news interpretation as trading signal
+This is a project to experiment with different methods of getting news sentiment for a given coin and to trade on that sentiment.
 
-The first version is a simple bot that uses news headlines as trading signal.
+It is assoaciated with a [Blog post on ProfitView](https://profitviews.net/blog/what-i-learned-when-building-an-ai-news-trading-bot).  You can [sign-up there](https://profitview.net/register) to run a bot that trades using news sentiment.
 
-The process is as follows:
+## Experiment
 
-1. Get the news headlines
-2. Use a pre-trained model to interpret the news headlines
-3. Generate trading signals based on the news interpretation
-4. Provide a signal.  It can be consumed by a trading algorithm or sent to other consumers
+I've created a [Jupyter notebook](src/experiment.ipynb) to experiment with different methods of getting news sentiment for a given coin.
 
-Possible improvements:
-1. Get news from more sources
-2. Get news story text
-3. Use more sophisticated models to interpret the news
-4. Use more sophisticated models to generate trading signals
-5. Backtest the signal
-6. Tune the signal
+To run the notebook, use your prefered Python environment.  I recommend using [JupyterLab](https://jupyter.org/install) or [VSCode](https://code.visualstudio.com/download).
 
-## First implementation
+You will probably set up a virtual environment; I recommend using [PyEnv](https://github.com/pyenv/pyenv) to manage your Python versions.  In your virtual environment, install the required packages - use `src/requirements.txt` via `pip install -r requirements.txt`.
 
-### Getting Headlines
+## Trading Bot
 
-Headlines are retrieved from the NewsAPI using the `newsapi` Python package.
-
-### Interpreting Headlines
-
-An OpenAI API call is used to interpret the headlines.
-
-### Generating Signals
-
-A simple prompt will be used to provide a Buy, Sell, or Hold signal.
+I've created a [Trading Bot](src/NewsDroid.py) that uses the news sentiment to trade on.  This runs on the [ProfitView platform](https://profitview.net/).
 
